@@ -38,17 +38,19 @@ public class ValidacoesListaTests
     public void NaoDeveConterONumero10NaLista()
     {
         //TODO: Implementar método de teste
-
+       
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
         var numeroParaProcurar = 10;
 
         // Act
-
+        bool contem =_validacoes.ListaContemDeterminadoNumero(lista,numeroParaProcurar);
         // Assert
+        Assert.False(contem);
     }
 
     //TODO: Corrigir a anotação [Fact]
+    [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
         //TODO: Implementar método de teste
